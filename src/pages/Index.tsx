@@ -3,9 +3,13 @@ import { Search, Play, Clock, Users, BookOpen, Star, ArrowRight, Menu, X } from 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { useToast } from '@/hooks/use-toast';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [enrolledCourses, setEnrolledCourses] = useState<Set<number>>(new Set());
+  const { toast } = useToast();
 
   const featuredCourses = [
     {
@@ -50,6 +54,14 @@ const Index = () => {
     { number: "4.8/5", label: "Average Rating" }
   ];
 
+  const handleEnroll = (courseId: number, courseTitle: string) => {
+    setEnrolledCourses(prev => new Set([...prev, courseId]));
+    toast({
+      title: "Course Enrolled!",
+      description: `You have successfully enrolled in "${courseTitle}". Welcome aboard!`,
+    });
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -58,23 +70,25 @@ const Index = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold text-blue-600">MedLearn Pro</h1>
+                <Link to="/" className="text-2xl font-bold text-blue-600">MedLearn Pro</Link>
               </div>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <a href="#" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Courses</a>
-                <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Programs</a>
-                <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">For Organizations</a>
-                <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</a>
-                <a href="#" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                <Link to="/courses" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Courses</Link>
+                <Link to="/programs" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Programs</Link>
+                <Link to="/for-organizations" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">For Organizations</Link>
+                <Link to="/about" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</Link>
+                <Link to="/contact" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</Link>
               </div>
             </div>
 
             <div className="hidden md:flex items-center space-x-4">
-              <Button variant="ghost" className="text-gray-600">Sign In</Button>
+              <Link to="/signin">
+                <Button variant="ghost" className="text-gray-600">Sign In</Button>
+              </Link>
               <Button className="bg-blue-600 hover:bg-blue-700">Get Started</Button>
             </div>
 
@@ -95,13 +109,15 @@ const Index = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-900">Courses</a>
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-500">Programs</a>
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-500">For Organizations</a>
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-500">About</a>
-              <a href="#" className="block px-3 py-2 text-base font-medium text-gray-500">Contact</a>
+              <Link to="/courses" className="block px-3 py-2 text-base font-medium text-gray-900">Courses</Link>
+              <Link to="/programs" className="block px-3 py-2 text-base font-medium text-gray-500">Programs</Link>
+              <Link to="/for-organizations" className="block px-3 py-2 text-base font-medium text-gray-500">For Organizations</Link>
+              <Link to="/about" className="block px-3 py-2 text-base font-medium text-gray-500">About</Link>
+              <Link to="/contact" className="block px-3 py-2 text-base font-medium text-gray-500">Contact</Link>
               <div className="px-3 py-2 space-y-2">
-                <Button variant="ghost" className="w-full justify-start">Sign In</Button>
+                <Link to="/signin">
+                  <Button variant="ghost" className="w-full justify-start">Sign In</Button>
+                </Link>
                 <Button className="w-full bg-blue-600 hover:bg-blue-700">Get Started</Button>
               </div>
             </div>
@@ -236,7 +252,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Courses */}
+      {/* Featured Courses - Updated with enrollment functionality */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -292,8 +308,16 @@ const Index = () => {
                     </div>
                   </div>
                   
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 group-hover:bg-blue-700">
-                    Enroll Now
+                  <Button 
+                    className={`w-full ${
+                      enrolledCourses.has(course.id) 
+                        ? 'bg-green-600 hover:bg-green-700' 
+                        : 'bg-blue-600 hover:bg-blue-700'
+                    } group-hover:bg-blue-700`}
+                    onClick={() => handleEnroll(course.id, course.title)}
+                    disabled={enrolledCourses.has(course.id)}
+                  >
+                    {enrolledCourses.has(course.id) ? 'Enrolled!' : 'Enroll Now'}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>
@@ -302,10 +326,12 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button size="lg" variant="outline" className="px-8">
-              View All Courses
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/courses">
+              <Button size="lg" variant="outline" className="px-8">
+                View All Courses
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -484,10 +510,10 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
+                <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
                 <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Press</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               </ul>
             </div>
             
