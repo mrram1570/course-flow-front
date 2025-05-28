@@ -125,7 +125,7 @@ const Index = () => {
         )}
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section with Healthcare Quality Improvement Focus */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -135,22 +135,22 @@ const Index = () => {
                   Trusted by 50,000+ Healthcare Professionals
                 </Badge>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Advance Your
-                  <span className="text-blue-600 block">Healthcare Career</span>
+                  Master Healthcare
+                  <span className="text-blue-600 block">Quality Improvement</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Master value-based care, quality improvement, and population health with expert-led courses designed for healthcare professionals.
+                  Transform patient outcomes through evidence-based quality improvement methodologies and comprehensive training programs designed for healthcare professionals.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
-                  Start Learning Today
+                  Start Quality Training
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8">
                   <Play className="mr-2 h-5 w-5" />
-                  Watch Demo
+                  Watch Training Demo
                 </Button>
               </div>
               
@@ -158,7 +158,7 @@ const Index = () => {
                 <div className="flex items-center">
                   <Star className="h-5 w-5 text-yellow-400 mr-1" />
                   <span className="font-medium">4.8/5</span>
-                  <span className="ml-1">from 12,000+ reviews</span>
+                  <span className="ml-1">from 12,000+ healthcare professionals</span>
                 </div>
               </div>
             </div>
@@ -166,73 +166,91 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80"
-                  alt="Healthcare professionals in training session"
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80"
+                  alt="Healthcare professionals in quality improvement training session"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-blue-600 bg-opacity-10"></div>
               </div>
               
-              {/* Floating elements */}
+              {/* Training Session Indicators */}
               <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 border border-gray-100">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-gray-700">Live Session</span>
+                  <span className="text-sm font-medium text-gray-700">Live Quality Training</span>
                 </div>
               </div>
               
               <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 border border-gray-100">
                 <div className="text-2xl font-bold text-blue-600">95%</div>
-                <div className="text-sm text-gray-600">Completion Rate</div>
+                <div className="text-sm text-gray-600">Quality Improvement Success</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Learning Methods Section */}
+      {/* Healthcare Professional Training Methods Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Learn Through Multiple Methods</h2>
-            <p className="text-xl text-gray-600">Flexible learning options designed for busy healthcare professionals</p>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Healthcare Professional Training Methods</h2>
+            <p className="text-xl text-gray-600">Comprehensive training approaches designed for busy healthcare professionals</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Quality Improvement Training */}
             <div className="text-center group">
               <div className="relative mb-6 mx-auto w-64 h-48 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=400&q=80"
-                  alt="Online learning with laptop"
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=400&q=80"
+                  alt="Healthcare quality improvement training session with medical professionals"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 text-white">
+                  <div className="text-sm font-semibold">Quality Improvement</div>
+                  <div className="text-xs">Evidence-Based Methods</div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Online Courses</h3>
-              <p className="text-gray-600">Self-paced learning with interactive modules and assessments</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Interactive Quality Workshops</h3>
+              <p className="text-gray-600">Hands-on training in PDSA cycles, root cause analysis, and quality metrics</p>
             </div>
             
+            {/* Professional Development Training */}
             <div className="text-center group">
               <div className="relative mb-6 mx-auto w-64 h-48 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=400&q=80"
-                  alt="Healthcare professional using MacBook"
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=400&q=80"
+                  alt="Healthcare professionals in training session with presentation screens"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 text-white">
+                  <div className="text-sm font-semibold">Live Sessions</div>
+                  <div className="text-xs">Expert-Led Training</div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Virtual Workshops</h3>
-              <p className="text-gray-600">Live interactive sessions with healthcare experts and peers</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Live Training Sessions</h3>
+              <p className="text-gray-600">Real-time interaction with healthcare experts and peer collaboration</p>
             </div>
             
+            {/* Mobile Learning for Healthcare */}
             <div className="text-center group">
               <div className="relative mb-6 mx-auto w-64 h-48 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=400&q=80"
-                  alt="Woman learning on laptop in comfortable setting"
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=80"
+                  alt="Healthcare professional using mobile learning platform"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="absolute bottom-3 left-3 text-white">
+                  <div className="text-sm font-semibold">Mobile Access</div>
+                  <div className="text-xs">24/7 Learning</div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile Learning</h3>
-              <p className="text-gray-600">Learn anywhere, anytime with our mobile-optimized platform</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile Healthcare Learning</h3>
+              <p className="text-gray-600">Access training modules anywhere, perfect for busy healthcare schedules</p>
             </div>
           </div>
         </div>
@@ -336,17 +354,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Why Choose Us - Enhanced Healthcare Focus */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Why Healthcare Professionals Choose MedLearn Pro
+                  Why Healthcare Professionals Choose Our Quality Improvement Training
                 </h2>
                 <p className="text-xl text-gray-600">
-                  We're dedicated to advancing healthcare through education, providing the tools and knowledge needed for better patient outcomes.
+                  We're dedicated to advancing healthcare through education, providing evidence-based tools and methodologies for measurable quality improvements.
                 </p>
               </div>
               
@@ -356,8 +374,8 @@ const Index = () => {
                     <BookOpen className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Expert-Led Content</h3>
-                    <p className="text-gray-600">Learn from practicing healthcare professionals and industry leaders with real-world experience.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Evidence-Based Quality Methods</h3>
+                    <p className="text-gray-600">Learn proven quality improvement frameworks including Lean, Six Sigma, and PDSA methodology from practicing healthcare quality experts.</p>
                   </div>
                 </div>
                 
@@ -366,8 +384,8 @@ const Index = () => {
                     <Users className="h-6 w-6 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Collaborative Learning</h3>
-                    <p className="text-gray-600">Connect with peers, share experiences, and learn together in our interactive community.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Healthcare Professional Network</h3>
+                    <p className="text-gray-600">Connect with quality improvement professionals, share success stories, and collaborate on healthcare transformation initiatives.</p>
                   </div>
                 </div>
                 
@@ -376,8 +394,8 @@ const Index = () => {
                     <Star className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Continuing Education Credits</h3>
-                    <p className="text-gray-600">Earn accredited continuing education credits to maintain your professional certifications.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Accredited Quality Training</h3>
+                    <p className="text-gray-600">Earn continuing education credits and quality improvement certifications recognized by healthcare organizations worldwide.</p>
                   </div>
                 </div>
               </div>
@@ -386,17 +404,25 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
-                  alt="Healthcare team collaboration and learning"
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=600&q=80"
+                  alt="Healthcare quality improvement team in collaborative training session"
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
               </div>
               
-              {/* Additional learning indicator */}
+              {/* Quality Training Indicators */}
               <div className="absolute top-6 right-6 bg-white rounded-lg shadow-lg p-3 border border-gray-100">
                 <div className="flex items-center space-x-2">
                   <BookOpen className="h-5 w-5 text-blue-600" />
-                  <span className="text-sm font-medium text-gray-700">24/7 Access</span>
+                  <span className="text-sm font-medium text-gray-700">Quality Methods</span>
+                </div>
+              </div>
+              
+              <div className="absolute bottom-6 left-6 bg-white rounded-lg shadow-lg p-3 border border-gray-100">
+                <div className="flex items-center space-x-2">
+                  <Star className="h-5 w-5 text-yellow-500" />
+                  <span className="text-sm font-medium text-gray-700">Certified Training</span>
                 </div>
               </div>
             </div>
@@ -404,15 +430,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Success Stories */}
+      {/* Success Stories - Enhanced with Quality Improvement Focus */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Success Stories from Healthcare Professionals
+              Quality Improvement Success Stories
             </h2>
             <p className="text-xl text-gray-600">
-              See how our courses have transformed careers in healthcare
+              Real results from healthcare professionals who implemented our quality improvement training
             </p>
           </div>
           
@@ -421,44 +447,45 @@ const Index = () => {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex items-center mb-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=100&h=100&q=80"
-                    alt="Dr. Maria Rodriguez"
+                    src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=100&h=100&q=80"
+                    alt="Dr. Maria Rodriguez - Quality Improvement Director"
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">Dr. Maria Rodriguez</h4>
-                    <p className="text-gray-600 text-sm">Quality Improvement Director</p>
+                    <p className="text-gray-600 text-sm">Quality Improvement Director, Metro Health</p>
                   </div>
                 </div>
-                <p className="text-gray-700 italic">"The quality improvement course helped me implement changes that reduced readmission rates by 30% at our hospital."</p>
+                <p className="text-gray-700 italic">"The quality improvement methodology training helped me implement PDSA cycles that reduced readmission rates by 30% and improved patient satisfaction scores by 25%."</p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="flex items-center mb-4">
                   <img 
-                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=100&h=100&q=80"
-                    alt="Nurse practitioner learning"
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=100&h=100&q=80"
+                    alt="James Chen - Quality Nurse Practitioner"
                     className="w-12 h-12 rounded-full object-cover mr-4"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-900">James Chen, NP</h4>
-                    <p className="text-gray-600 text-sm">Nurse Practitioner</p>
+                    <p className="text-gray-600 text-sm">Quality Improvement Nurse Practitioner</p>
                   </div>
                 </div>
-                <p className="text-gray-700 italic">"The population health management course gave me the skills to better serve my community patients."</p>
+                <p className="text-gray-700 italic">"The training gave me practical tools to lead quality initiatives. We've reduced medication errors by 40% using the root cause analysis methods I learned."</p>
               </div>
             </div>
             
             <div className="relative">
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80"
-                  alt="Healthcare professional studying online"
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=600&q=80"
+                  alt="Healthcare quality improvement training session in progress"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
-                  <p className="text-sm font-medium">Watch success stories</p>
+                  <p className="text-lg font-semibold">Quality Training Success</p>
+                  <p className="text-sm">Watch transformation stories</p>
                 </div>
               </div>
             </div>
