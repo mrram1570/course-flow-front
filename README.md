@@ -8,9 +8,9 @@
 
 There are several ways of editing your application.
 
-**Use Lovable**
+**Use **
 
-Simply visit the [Lovable Project](https://github.com/mrram1570/course-flow-front.git) and start prompting.
+Simply visit the [Project](https://github.com/mrram1570/course-flow-front.git) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
@@ -18,7 +18,7 @@ Changes made via Lovable will be committed automatically to this repo.
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The only requirement is having Node.js & npm installed - 
 
 Follow these steps:
 
@@ -62,7 +62,8 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/60c4099d-befe-4ab6-acd3-d5441a4f6c9c) and click on Share -> Publish.
+Simply open (https://github.com/mrram1570/course-flow-front.git) and click on Share -> Publish.
+TO view the project output firstly open file manager and create new file in local disk as mrpandu and do the git clone reprository  and open the file in vs code then open new terminal and  execute the this command in terminals npm install  then npm run dev  then it show the link in terminals  just press the ctrl+click then we an view the output of the code 
 
 ## Can I connect a custom domain to my Lovable project?
 
@@ -70,4 +71,4 @@ Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Read more here: 
