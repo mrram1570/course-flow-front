@@ -65,7 +65,7 @@ This project is built with:
 Simply open (https://github.com/mrram1570/course-flow-front.git) and click on Share -> Publish.
 TO view the project output firstly open file manager and create new file in local disk as mrpandu and do the git clone reprository  and open the file in vs code then open new terminal and  execute the this command in terminals npm install  then npm run dev  then it show the link in terminals  just press the ctrl+click then we an view the output of the code 
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain to my project?
 
 Yes, you can!
 
