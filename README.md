@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# Welcome to your project
 
 ## Project info
 
-**URL**: 
+**URL**: https://github.com/mrram1570/course-flow-front.git
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/60c4099d-befe-4ab6-acd3-d5441a4f6c9c) and start prompting.
+Simply visit the [Lovable Project](https://github.com/mrram1570/course-flow-front.git) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
