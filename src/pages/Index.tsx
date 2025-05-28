@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Search, Play, Clock, Users, BookOpen, Star, ArrowRight, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -27,7 +26,7 @@ const Index = () => {
       duration: "6 weeks",
       students: 980,
       rating: 4.8,
-      image: "photo-1559757148-5c350d0d3c56",
+      image: "photo-1581091226825-a6a2a5aee158",
       category: "Healthcare Economics",
       level: "Beginner"
     },
@@ -38,7 +37,7 @@ const Index = () => {
       duration: "10 weeks",
       students: 756,
       rating: 4.9,
-      image: "photo-1576091160550-2173dba999ef",
+      image: "photo-1649972904349-6e44c42644a7",
       category: "Public Health",
       level: "Advanced"
     }
@@ -152,7 +151,7 @@ const Index = () => {
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80"
-                  alt="Healthcare professionals learning"
+                  alt="Healthcare professionals in training session"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-blue-600 bg-opacity-10"></div>
@@ -170,6 +169,54 @@ const Index = () => {
                 <div className="text-2xl font-bold text-blue-600">95%</div>
                 <div className="text-sm text-gray-600">Completion Rate</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Methods Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Learn Through Multiple Methods</h2>
+            <p className="text-xl text-gray-600">Flexible learning options designed for busy healthcare professionals</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center group">
+              <div className="relative mb-6 mx-auto w-64 h-48 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=400&q=80"
+                  alt="Online learning with laptop"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Online Courses</h3>
+              <p className="text-gray-600">Self-paced learning with interactive modules and assessments</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="relative mb-6 mx-auto w-64 h-48 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=400&q=80"
+                  alt="Healthcare professional using MacBook"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Virtual Workshops</h3>
+              <p className="text-gray-600">Live interactive sessions with healthcare experts and peers</p>
+            </div>
+            
+            <div className="text-center group">
+              <div className="relative mb-6 mx-auto w-64 h-48 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=400&q=80"
+                  alt="Woman learning on laptop in comfortable setting"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile Learning</h3>
+              <p className="text-gray-600">Learn anywhere, anytime with our mobile-optimized platform</p>
             </div>
           </div>
         </div>
@@ -311,11 +358,83 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
-                alt="Healthcare team collaboration"
-                className="rounded-2xl shadow-2xl"
-              />
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
+                  alt="Healthcare team collaboration and learning"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              {/* Additional learning indicator */}
+              <div className="absolute top-6 right-6 bg-white rounded-lg shadow-lg p-3 border border-gray-100">
+                <div className="flex items-center space-x-2">
+                  <BookOpen className="h-5 w-5 text-blue-600" />
+                  <span className="text-sm font-medium text-gray-700">24/7 Access</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Success Stories from Healthcare Professionals
+            </h2>
+            <p className="text-xl text-gray-600">
+              See how our courses have transformed careers in healthcare
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=100&h=100&q=80"
+                    alt="Dr. Maria Rodriguez"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Dr. Maria Rodriguez</h4>
+                    <p className="text-gray-600 text-sm">Quality Improvement Director</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic">"The quality improvement course helped me implement changes that reduced readmission rates by 30% at our hospital."</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=100&h=100&q=80"
+                    alt="Nurse practitioner learning"
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-gray-900">James Chen, NP</h4>
+                    <p className="text-gray-600 text-sm">Nurse Practitioner</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic">"The population health management course gave me the skills to better serve my community patients."</p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80"
+                  alt="Healthcare professional studying online"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-sm font-medium">Watch success stories</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
