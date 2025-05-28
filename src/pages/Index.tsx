@@ -79,6 +79,7 @@ const Index = () => {
               <div className="ml-10 flex items-baseline space-x-8">
                 <Link to="/courses" className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Courses</Link>
                 <Link to="/programs" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Programs</Link>
+                <Link to="/certificate" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Certificate</Link>
                 <Link to="/for-organizations" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">For Organizations</Link>
                 <Link to="/about" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">About</Link>
                 <Link to="/contact" className="text-gray-500 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">Contact</Link>
@@ -111,6 +112,7 @@ const Index = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link to="/courses" className="block px-3 py-2 text-base font-medium text-gray-900">Courses</Link>
               <Link to="/programs" className="block px-3 py-2 text-base font-medium text-gray-500">Programs</Link>
+              <Link to="/certificate" className="block px-3 py-2 text-base font-medium text-gray-500">Certificate</Link>
               <Link to="/for-organizations" className="block px-3 py-2 text-base font-medium text-gray-500">For Organizations</Link>
               <Link to="/about" className="block px-3 py-2 text-base font-medium text-gray-500">About</Link>
               <Link to="/contact" className="block px-3 py-2 text-base font-medium text-gray-500">Contact</Link>
@@ -166,7 +168,7 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80"
                   alt="Healthcare professionals in quality improvement training session"
                   className="w-full h-full object-cover"
                 />
@@ -215,6 +217,9 @@ const Index = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Interactive Quality Workshops</h3>
               <p className="text-gray-600">Hands-on training in PDSA cycles, root cause analysis, and quality metrics</p>
+              <Link to="/certificate" className="inline-block mt-3">
+                <Button variant="outline" size="sm">View Certificate</Button>
+              </Link>
             </div>
             
             {/* Professional Development Training */}

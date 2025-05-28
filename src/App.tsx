@@ -11,6 +11,7 @@ import ForOrganizations from "./pages/ForOrganizations";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SignIn from "./pages/SignIn";
+import CertificatePage from "./pages/CertificatePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/certificate" element={<CertificatePage />} />
           <Route path="/for-organizations" element={<ForOrganizations />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
