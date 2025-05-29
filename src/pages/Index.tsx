@@ -168,8 +168,8 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=800&q=80"
-                  alt="Healthcare professionals in quality improvement training session"
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80"
+                  alt="Healthcare quality improvement team in collaborative training session"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-blue-600 bg-opacity-10"></div>
@@ -409,8 +409,8 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=600&q=80"
-                  alt="Healthcare quality improvement team in collaborative training session"
+                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=600&q=80"
+                  alt="Healthcare professionals in quality improvement session analyzing patient data and metrics"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
