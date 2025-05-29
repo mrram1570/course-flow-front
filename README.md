@@ -10,13 +10,12 @@ There are several ways of editing your application.
 
 **Use **
 
-Simply visit the [Project](https://github.com/mrram1570/course-flow-front.git) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+Changes made  will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected once.
 
 The only requirement is having Node.js & npm installed - 
 
